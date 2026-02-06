@@ -31,20 +31,21 @@ Instead of giving services my real email, every website/company gets a separate 
 - **Replying to emails:** SimpleLogin utilizes "reverse alias" meaning I can reply to emails and it shows the alias as the sender instead of my real email.
 
 ## Password Management
-Every account has a unique, randomly generated password (20+ charaters). I don't know any of my passwords except my master password.
+Every account has a unique, randomly generated password (20+ characters). I don't know any of my passwords except my master password.
 
 **Tool:** Proton Pass (zero-knowledge encryption)
 
-**Why zero-knowledge matters:**
-- Even if Proton's servers got hacked, attackers would only get encrypted data which is useless without my master password.
-- Proton itself cannot even see my passwords.
+**Why it matters:**
+- Zero-knowledge protects "resting" emails/data upon arrival/creation, makes stolen data useless without master password
+- End-to-end encryption protects emails/data in transit
+- Proton itself cannot even see my data
 
 ## Multi-Factor Authentication
 
 I use 2FA on every account that supports it.
 
 **My hierarchy:**
-1. Hardware security keys (YubiKey) - for critical stuff like email and password manager
+1. Hardware security keys (Nitrokey) - for critical stuff like email and password manager
 2. TOTP authenticator apps - for most accounts
 3. SMS - only when there's no other choice
 
@@ -60,4 +61,4 @@ I use 2FA on every account that supports it.
 
 ## What I Still Want to Add Later
 - Another layer of security via home network
-- Better backup strategy for important files
+- Possibly another hardware security key for redundancy
