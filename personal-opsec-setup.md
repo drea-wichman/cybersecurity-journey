@@ -1,7 +1,7 @@
 # Personal Operational Security Setup
 
 ## Overview
-When I started learning about cybersecurity, I realized that I was already thinking like a defender by being security concious in my personal life. This documents my personal setup and transition away from Google ecosystem (Gmail, Chrome, and Google search) to privacy-focused alternatives (Proton, Tor, and DuckDuckGo).
+When I started learning about cybersecurity formally, I realized that I was already thinking like a defender by being security concious in my personal life. This documents my personal setup and transition away from Google ecosystem (Gmail, Chrome, and Google search) to privacy-focused alternatives (Proton, Tor, and DuckDuckGo).
 
 
 ## Email Strategy
@@ -28,10 +28,10 @@ Instead of giving services my real email, every website/company gets a separate 
 
 - **Spam tracking:** If an alias starts getting spam, I know exactly which company leaked/sold my data and can disable that specific alias without touching anything else.
 
-- **Replying to emails:** SimpleLogin utilizes "reverse alias" meaning I can reply to emails and it shows the alias as the sender instead of my email.
+- **Replying to emails:** SimpleLogin utilizes "reverse alias" meaning I can reply to emails and it shows the alias as the sender instead of my real email.
 
 ## Password Management
-Every account has a unique, randomly generated password (20+ charaters). I don't know any of my passwords except my master pasword.
+Every account has a unique, randomly generated password (20+ charaters). I don't know any of my passwords except my master password.
 
 **Tool:** Proton Pass (zero-knowledge encryption)
 
@@ -41,7 +41,7 @@ Every account has a unique, randomly generated password (20+ charaters). I don't
 
 ## Multi-Factor Authentication
 
-I use 2FA on every account that has it.
+I use 2FA on every account that supports it.
 
 **My hierarchy:**
 1. Hardware security keys (YubiKey) - for critical stuff like email and password manager
