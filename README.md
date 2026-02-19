@@ -11,7 +11,7 @@ I'm starting my cybersecurity journey from whatever comes before square one...no
 ## Current Projects
 - Personal OpSec Setup: custom domain email with Proton, DKIM/SPF/DMARC, & unique aliases per service
 - Nitrokey hardware security key setup
-- [Home Lab](https://github.com/yourusername/IT-homelab) - Active Directory and virtualization practice
+- [Home Lab](https://github.com/drea-wichman/IT-homelab) - Active Directory and virtualization practice
 
 ## Goals
 - Pass CompTIA A+ (shooting to complete Core 1+2 by March 2026)
