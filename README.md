@@ -10,12 +10,12 @@ I'm starting my cybersecurity journey from whatever comes before square one...no
 
 ## Current Projects
 - Personal OpSec Setup: custom domain email with Proton, DKIM/SPF/DMARC, & unique aliases per service
-- Building home lab environment (hardware arriving this week)
+- Nitrokey hardware security key setup
+- [Home Lab] (https://github.com/drea-wichman/IT-homelab) - Active Directory and virtualization practice
 
 ## Goals
-- Pass CompTIA A+ (shooting for March 2026)
+- Pass CompTIA A+ (shooting to complete Core 1+2 by March 2026)
 - Build a home lab environment
 - Set up Active Directory
-- Pass CompTIA Security+
 - Complete TryHackMe paths
 - Land entry-level cybersecurity role
