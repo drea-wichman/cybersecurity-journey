@@ -19,8 +19,3 @@ I'm starting my cybersecurity journey from whatever comes before square one...no
 - Pass CompTIA Security+
 - Complete TryHackMe paths
 - Land entry-level cybersecurity role
-
-## Equipment
-- HP EliteDesk 800 G3 Mini (i7-7700, 32GB RAM)
-- LG 24" Monitor
-- Planning to run: Windows Server, Kali Linux, Ubuntu
