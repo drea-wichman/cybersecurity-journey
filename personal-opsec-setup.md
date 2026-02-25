@@ -53,6 +53,42 @@ I use 2FA on every account that supports it.
 
 **VPN:** Proton VPN running 24/7 on all devices for traffic encryption and protection on public WiFi
 
+## Privacy Architecture
+
+**How my traffic flows:**
+```
+┌──────────────┐
+│  Brave/Tor   │ ◄─── blocks trackers and ads at browser level
+│   Browser    │
+└──────┬───────┘
+       │ (encrypted by VPN)
+       ▼
+┌──────────────┐
+│  Proton VPN  │ ◄─── "my spokesperson"
+└──────┬───────┘
+       │
+       ▼
+┌──────────────┐
+│  Cloudflare  │ ◄─── private DNS lookups
+│  (1.1.1.1)   │ 
+└──────┬───────┘
+       │
+       ▼
+┌──────────────┐
+│   Internet   │
+│   (Sites)    │
+└──────────────┘
+```
+**How it works together:**
+
+All traffic is encrypted before leaving my device, VPN is my spokesperson handling all communication with the internet on my behalf, and router/ISP only see that I'm using a VPN but can't see the data because it's an encrypted tunnel.
+
+**What each layer protects:**
+* **Cloudflare DNS:** private domain lookups, no logging like Google 8.8.8.8 does
+* **Proton VPN:** hides browsing from router/ISP, changes my location, no logs kept
+* **Brave Browser:** blocks trackers and ads at browser level
+* **Proton Mail:** end-to-end encrypted communications
+
 ## What I'm learning from this
 - How authentication actually works in real life beyond theory
 - What a breach response looks like in practice
@@ -62,3 +98,4 @@ I use 2FA on every account that supports it.
 ## What I Still Want to Add Later
 - Another layer of security via home network
 - Possibly another hardware security key for redundancy
+- sort of curious about Cloudflare vs. Quad9 vs. NextDNS now
