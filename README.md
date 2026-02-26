@@ -5,17 +5,21 @@
 I'm starting my cybersecurity journey from whatever comes before square one...no prior tech experience, just a lot of curiosity about how it all works. I'll be documenting everything I learn here as I work toward landing my first role in the field.
 
 ## Current Status
-- Studying for CompTIA A+ Core 1
-- Learning security fundamentals
+- Passed **CompTIA A+ Core 1 (220-1201)** on February 25, 2026
+- Studying for **CompTIA A+ Core 2 (220-1202)** - target completion March 2026
+- Building technical skills through hands-on home lab work
 
 ## Current Projects
-- Personal OpSec Setup: custom domain email with Proton, DKIM/SPF/DMARC, & unique aliases per service
-- Nitrokey hardware security key setup
-- [Home Lab](https://github.com/drea-wichman/IT-homelab) - Active Directory and virtualization practice
+- **[Home Lab](https://github.com/drea-wichman/IT-homelab)** - Windows Server 2022 domain controller, Active Directory, DNS configuration and troubleshooting
+- **[Personal OpSec Setup](https://github.com/drea-wichman/cybersecurity-journey/blob/main/personal-opsec-setup.md)** - custom domain email with Proton, DKIM/SPF/DMARC configuration, unique aliases per service
+- **Hardware Security** - Nitrokey for MFA
+
+## Completed Milestones
+- ✅ Configured Windows Server 2022 as domain controller in homelab
+- ✅ Resolved DNS resolution issues in AD environment
+- ✅ Passed CompTIA A+ Core 1
 
 ## Goals
-- Pass CompTIA A+ (shooting to complete Core 1+2 by March 2026)
-- Build a home lab environment
-- Set up Active Directory
-- Complete TryHackMe paths
-- Land entry-level cybersecurity role
+- Complete CompTIA A+ certification (Core 2)
+- Expand home lab projects
+- More TryHackMe paths
