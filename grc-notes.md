@@ -25,4 +25,4 @@ An agreement between two or more countries that allows them to request and share
 
 
 **Why it matters:**
-Organizations operating internationally need to understand that legal obligations cross borders. Privacy tools protect content, but metadata and account information can still be compelled through legal frameworks. Compliance teams should consider how MLATs affect who can legally access data and where.
+Organizations operating internationally need to understand that legal obligations cross borders. Privacy tools protect content, but metadata and account information can still be captured legally. Compliance teams should consider how MLATs affect who can legally access data and where.
