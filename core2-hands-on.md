@@ -1,5 +1,5 @@
 CompTIA A+ Core 2 (1202) Hands-On Lab Log
-Documenting hands-on tasks big and small completed with coursework. Each entry shows something I learned about while studying and completed on one of my own machines. For Core 2 I'm using Mike Meyers' on Udemy for initial run through then Professor Messer for in depth info when needed.
+Documenting hands-on tasks big and small completed with coursework. Each entry shows something I learned about while studying and completed on one of my own machines. For Core 2 I'm using Professor Messer again.
 
 
 ## March 4, 2026
