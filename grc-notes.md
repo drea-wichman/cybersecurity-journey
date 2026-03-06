@@ -7,7 +7,7 @@ Documenting random governance, risk, and compliance related topics as I encounte
 ## Mutual Legal Assistance Treaties (MLATs)
 
 **Real-world example:**
-US law enforcement used the MLAT with Switzerland to make Swiss-based Proton Mail hand over account metadata (credit card number) for a criminal investigation. Proton complied because they are legally required to follow Swiss court orders. Important distinction people are missing: Proton's end-to-end encryption meant they could not hand over email content or file contents (which they should not have access to anyway), only metadata. Despite backlash, the Proton critique is moot because their job is to encrypt CONTENT. Account creation and payment info are not content. The user's OPSEC failure was using a personal credit card and public IP without a VPN which made them traceable.
+US law enforcement used the MLAT with Switzerland to make Swiss-based Proton Mail hand over account metadata (credit card number) for a criminal investigation. Proton complied because they are legally required to follow Swiss court orders. Important distinction people are missing: Proton's end-to-end encryption meant they could not hand over email content or file contents (which they should not have access to anyway), only metadata which to my knowledge can't be encrypted, only hidden like in onion routing. Despite backlash, the Proton critique is moot because their job is to encrypt CONTENT. Account creation and payment info are not content. The user's OPSEC failure was using a personal credit card and public IP without a VPN which made them traceable.
 
 **What is an MLAT:**
 An agreement between two or more countries that allows them to request and share evidence and information for criminal investigations.
