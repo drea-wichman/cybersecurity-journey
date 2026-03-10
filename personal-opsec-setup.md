@@ -20,8 +20,6 @@ I have a main Proton email that I basically never use directly or give out.
 ### Email Aliasing (SimpleLogin)
 Instead of giving services my real email, every website/company gets a separate and unique alias. All emails received by an alias are forwarded to my Proton email.
 
-**How it works:** Amazon gets shopping.abc123@8alias.com and Netflix gets streaming.def456@slmails.com
-
 **Why I do this:**
 
 - **Breach containment:** If(when) a service gets hacked, attackers only get that one alias. I disable it, create a new one, update my account. My other accounts stay safe.
