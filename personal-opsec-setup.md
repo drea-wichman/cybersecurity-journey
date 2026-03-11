@@ -49,7 +49,8 @@ I use 2FA on every account that supports it.
 
 ## Network Security
 
-**VPN:** Proton VPN running 24/7 on all devices for traffic encryption and protection on public WiFi
+**VPN:** Proton VPN running 24/7 on all devices for traffic encryption and protection on public WiFi  
+**IoT Network Isolation:** Separate network for IoT devices to isolate from primary devices
 
 ## Privacy Architecture
 
