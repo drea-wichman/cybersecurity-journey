@@ -48,8 +48,8 @@ I use 2FA on every account that supports it.
 3. SMS - only when there's no other choice
 
 ## Network Security
-
-**VPN:** Proton VPN running 24/7 on all devices for traffic encryption and protection on public WiFi  
+**Firewall:** Network + host also
+**VPN:** Proton VPN running 24/7 on all devices
 **IoT Network Isolation:** Separate network for IoT devices to isolate from primary devices
 
 ## Privacy Architecture
@@ -57,18 +57,24 @@ I use 2FA on every account that supports it.
 **How my traffic flows:**
 ```
 ┌──────────────┐
-│  Brave/Tor   │ ◄─── blocks trackers and ads at browser level
+│   Firewall   │
+│              │
+└──────┬───────┘
+       │
+       ▼
+┌──────────────┐
+│  Brave/Tor   │
 │   Browser    │
 └──────┬───────┘
        │ (encrypted by VPN)
        ▼
 ┌──────────────┐
-│  Proton VPN  │ ◄─── "my spokesperson"
+│  Proton VPN  │
 └──────┬───────┘
        │
        ▼
 ┌──────────────┐
-│  Cloudflare  │ ◄─── private DNS lookups
+│  Cloudflare  │
 │  (1.1.1.1)   │ 
 └──────┬───────┘
        │
@@ -87,6 +93,7 @@ All traffic is encrypted before leaving my device, VPN is my spokesperson handli
 * **Proton VPN:** hides browsing from router/ISP, changes my location, no logs kept
 * **Brave Browser:** blocks trackers and ads at browser level
 * **Proton Mail:** end-to-end encrypted communications
+* **Host Firewall:** blocks any uninvited incoming connections
 
 ## What I'm learning from this
 - How authentication actually works in real life beyond theory
