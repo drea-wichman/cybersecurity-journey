@@ -1,7 +1,7 @@
 # Personal Operational Security Setup
 
 ## Overview
-When I started learning about cybersecurity formally, I realized that I was already thinking like a defender by being security concious in my personal life. This documents my personal setup and transition away from Google ecosystem (Gmail, Chrome, and Google search) to privacy-focused alternatives (Proton, Tor, and DuckDuckGo).
+When I started learning about cybersecurity formally, I realized that I was already thinking like a defender by being security conscious in my personal life. This documents my personal setup and transition away from Google ecosystem (Gmail, Chrome, and Google search) to privacy-focused alternatives (Proton, Tor, and DuckDuckGo).
 
 
 ## Email Strategy
@@ -57,25 +57,22 @@ I use 2FA on every account that supports it.
 **How my traffic flows:**
 ```
 ┌──────────────┐
-│   Firewall   │
-│              │
+│   Device     │
+│  (Brave/Tor) │
 └──────┬───────┘
        │
        ▼
 ┌──────────────┐
-│  Brave/Tor   │
-│   Browser    │
+│    Host      │
+│   Firewall   │
 └──────┬───────┘
-       │ (encrypted by VPN)
+       │
        ▼
 ┌──────────────┐
 │  Proton VPN  │
-└──────┬───────┘
-       │
-       ▼
-┌──────────────┐
-│  Cloudflare  │
-│  (1.1.1.1)   │ 
+│ (encrypted   │
+│  tunnel +    │
+│  DNS)        │
 └──────┬───────┘
        │
        ▼
@@ -89,8 +86,8 @@ I use 2FA on every account that supports it.
 All traffic is encrypted before leaving my device, VPN is my spokesperson handling all communication with the internet on my behalf, and router/ISP only see that I'm using a VPN but can't see the data because it's an encrypted tunnel.
 
 **What each layer protects:**
-* **Cloudflare DNS:** private domain lookups, no logging like Google 8.8.8.8 does
-* **Proton VPN:** hides browsing from router/ISP, changes my location, no logs kept
+* **Cloudflare DNS:** private domain lookups when VPN is off for whatever reason, no logging like Google 8.8.8.8 does
+* **Proton VPN:** hides browsing from router/ISP, changes my location, no logs kept, handles DNS privately when active
 * **Brave Browser:** blocks trackers and ads at browser level
 * **Proton Mail:** end-to-end encrypted communications
 * **Host Firewall:** blocks any uninvited incoming connections
