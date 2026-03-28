@@ -122,13 +122,13 @@ The £92 million cost to recover from WannaCry far exceeded whatever basic secur
 
 ## Lessons Learned
 
-A patch is only useful if it's applied. EternalBlue had a fix which sat unused across hundreds of NHS systems for nearly two months. Vulnerability management is not simply knowing a patch exists, it's about making sure it gets installed.
+- A patch is only useful if it's applied. EternalBlue had a fix which sat unused across hundreds of NHS systems for nearly two months. Vulnerability management is not simply knowing a patch exists, it's about making sure it gets installed.
 
-Warnings mean nothing without accountability. The NHS received alerts from NHS Digital and a warning from the Department of Health a full year before the attack. None of it translated into action. An organization that issues guidance without verifying compliance has not actually managed a risk.
+- Warnings mean nothing without accountability. The NHS received alerts from NHS Digital and a warning from the Department of Health a full year before the attack. None of it translated into action. An organization that issues guidance without verifying compliance has not actually managed a risk.
 
-Legacy systems are a liability, not an inconvenience. Windows XP was end of life in 2014 and was a known vulnerability in 2017. The decision to keep running unsupported software is a risk decision that the NHS made repeatedly.
+- Legacy systems are a liability, not an inconvenience. Windows XP was end of life in 2014 and was a known vulnerability in 2017. The decision to keep running unsupported software is a risk decision that the NHS made repeatedly.
 
-Underfunding and Underplanning is a Security Risk. The NHS's refusal to modernize its IT infrastructure was consistently linked to budget constraints. An incident response plan that has never been tested is not a plan. Cybersecurity investment is inherent to patient safety and should be treated as any other emergency. WannaCry has made that impossible to ignore.
+- Underfunding and Underplanning is a Security Risk. The NHS's refusal to modernize its IT infrastructure was consistently linked to budget constraints. An incident response plan that has never been tested is not a plan. Cybersecurity investment is inherent to patient safety and should be treated as any other emergency. WannaCry has made that impossible to ignore.
 
 ---
 
