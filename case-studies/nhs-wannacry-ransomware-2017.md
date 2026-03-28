@@ -5,6 +5,13 @@
 
 ---
 
+> *This is an independent educational case study based on publicly available post-incident reports and investigations. It is not an official audit or compliance assessment.*
+
+## Executive Summary
+The 2017 WannaCry ransomware attack on the NHS was not a sophisticated operation. It exploited a known vulnerability with a publicly available patch, on systems that had been flagged as outdated for years, inside an organization that had been warned about exactly this risk twelve months prior. The result was 81 affected trusts, 19,000 cancelled appointments, and £92 million in damages. This case study applies an ISO 27001 gap analysis to identify the specific control failures that made the attack possible and outlines a remediation roadmap to prevent recurrence.
+
+---
+
 ## Overview
 
 The National Health Service is the United Kingdom's publicly funded healthcare system, established in 1948 and serving over 65 million people. The NHS is one of the largest employers in the world and runs on a large network of interconnected systems including patient records, diagnostic equipment, and communications infrastructure across hundreds of hospital trusts and GP surgeries nationwide.
@@ -28,11 +35,11 @@ On May 12, 2017, a ransomware worm called WannaCry tore through 150 countries in
 
 ## Threat Actor
 
-**Group:** Lazarus Group
-**Type:** State-sponsored
-**Origin:** North Korea
-**Method:** Ransomware worm — EternalBlue exploit used to automatically spread WannaCry across unpatched Windows systems, encrypting files and demanding Bitcoin ransom
-**Attribution:** Formally attributed to North Korea by the US and UK governments in December 2017. North Korea has denied involvement.
+**Group:** Lazarus Group  
+**Type:** State-sponsored  
+**Origin:** North Korea  
+**Method:** Ransomware worm — EternalBlue exploit used to automatically spread WannaCry across unpatched Windows systems, encrypting files and demanding Bitcoin ransom  
+**Attribution:** Formally attributed to North Korea by the US and UK governments in December 2017. North Korea has denied involvement.  
 **Notable:** Most ransomware groups are criminal organizations motivated purely by money. Lazarus Group works for the North Korean government. The ransom demand was relatively low at $300–$600 per machine and the payment infrastructure was poorly designed, raising questions about whether financial gain was the primary motivation.
 
 ---
@@ -41,9 +48,7 @@ On May 12, 2017, a ransomware worm called WannaCry tore through 150 countries in
 
 At least 81 of 236 NHS trusts in England were affected, 34 directly infected and the rest disrupted through preventative shutdowns or shared systems with infected organizations. Eight percent of GP surgeries were also impacted.
 
-Hospitals were locked out of their computers, patient records, and diagnostic equipment at the same time. MRI scanners, blood storage refrigerators, and theatre equipment were among the devices affected. Staff reverted to pen and paper and used personal mobile phones after internal communications went down. Thousands of critical and elective procedures were cancelled, totaling 19,000 appointments in one week. Total cost to the NHS was £92 million, £19 million in lost output during the attack and £73 million in IT recovery costs afterward.
-
-No patient deaths were directly attributed to WannaCry. The NHS did not pay the ransom.
+Hospitals were locked out of their computers, patient records, and diagnostic equipment at the same time. MRI scanners, blood storage refrigerators, and theatre equipment were among the devices affected. Staff reverted to pen and paper and used personal mobile phones after internal communications went down. Thousands of critical and elective procedures were cancelled, totaling 19,000 appointments in one week. Total cost to the NHS was £92 million, £19 million in lost output during the attack and £73 million in IT recovery costs afterward. No patient deaths were directly attributed to WannaCry. The NHS did not pay the ransom.
 
 ---
 
@@ -79,56 +84,52 @@ No patient deaths were directly attributed to WannaCry. The NHS did not pay the 
 
 ## ISO 27001 Controls Mapping
 
-ISO 27001 is an international standard for information security management. It defines a set of controls organizations should have in place to protect their information assets. The following maps the NHS's failures against the relevant controls.
+*Note: Control references below reflect ISO 27001:2013 Annex A, the version in effect at the time of the attack.*
 
-**A.12.6.1 Management of Technical Vulnerabilities — Fail**
-ISO 27001 requires organizations to identify, assess, and patch technical vulnerabilities in a timely manner. Microsoft released a patch for EternalBlue in March 2017. NHS Digital issued alerts but patches were not applied.
+ISO 27001 is an international standard for information security management. The following gap analysis maps NHS control failures against the relevant Annex A controls.
 
-**A.8.1 Asset Management — Fail**
-Organizations must maintain an inventory of assets and ensure they are appropriately protected. The NHS had no clear picture of how many devices were running unsupported operating systems or whether they had taken action on the alerts. You cannot protect what you cannot see.
-
-**A.13.1.3 Segregation in Networks — Fail**
-ISO 27001 requires that networks be segmented to limit the spread of security incidents. WannaCry moved freely across NHS systems because that segmentation did not exist. One infected device should not have been able to take down an entire trust.
-
-**A.16.1 Management of Information Security Incidents — Fail**
-Organizations must have a documented incident response capability. When WannaCry hit the NHS had no national playbook, no clear leadership, and no rehearsed response. Communications broke down immediately.
-
-**A.18.1 Compliance with Legal and Contractual Requirements — Fail**
-The NHS had legal obligations under the Data Protection Act 1998 to protect personal data. Running unsupported software on systems containing patient data and failing to apply available patches was not appropriate. This control failed before WannaCry ever arrived.
+| Control | Requirement | Observed State | Gap | Risk Impact |
+|---|---|---|---|---|
+| A.12.6.1 Technical Vulnerability Management | Identify and patch vulnerabilities in a timely manner | Patch MS17-010 was available March 14, 2017. NHS Digital sent alerts. Most NHS systems were still unpatched when the attack hit. | No patch management process. No one verified the alerts were acted on. | EternalBlue spread freely across a network that had a fix sitting unused for two months. |
+| A.8.1 Asset Management | Maintain an inventory of assets and ensure they are protected | No centralized asset inventory. No visibility into how many devices ran unsupported software. | Couldn't identify vulnerable systems, let alone fix them. | Windows XP machines were already end of life and became a permanent open door. |
+| A.13.1.3 Network Segregation | Segment networks to limit the spread of incidents | No effective segmentation across departments, facilities, or device types. | One flat network. No boundaries. | A single entry point took down trusts across England within hours. |
+| A.16.1 Incident Management | Maintain a documented incident response capability | No national response plan. No designated lead. No rehearsed procedures. | Nobody knew who was in charge when it mattered. | Response was reactive and communications collapsed immediately. |
+| A.18.1 Compliance with Legal Requirements | Meet applicable legal and regulatory obligations | Patient data exposed. Systems containing personal data ran unpatched, unsupported software. | No technical measures in place to meet Data Protection Act 1998 obligations. | Regulatory exposure. GDPR liability would have been significant had the attack happened a year later. |
 
 ---
 
 ## Recommendations
 
-**Apply patches immediately:**
-A patch existed for nearly two months before the attack. Critical patches need a formal process for deployment and cannot sit uninstalled.
+**A.12.6.1 — Patch Management**
+Deploy a centralized patch management tool (WSUS, SCCM, or equivalent). Critical patches applied within 48 hours, high severity within 7 days. Compliance verified automatically, not by hoping someone read an email.
 
-**Retire unsupported systems:**
-The NHS was told to migrate away from Windows XP by 2015. Deadlines for retiring legacy systems need to be enforced, not suggested.
+**A.8.1 — Asset Inventory**
+Build and maintain a centralized asset inventory covering every device including medical equipment. Unsupported operating systems get isolated or replaced on a fixed timeline. No exceptions without documented sign-off.
 
-**Verify compliance:**
-Sending alerts is not enough. Guidance needs to be followed by audits.
+**A.13.1.3 — Network Segmentation**
+Separate clinical networks from corporate IT. High-risk devices get their own VLANs with strict access controls. One infected machine should not be able to reach everything else.
 
-**Segment networks:**
-A single infected device should not be able to bring down an entire trust. Basic network segmentation would have significantly limited the damage.
+**A.16.1 — Incident Response**
+Write the plan before the attack, not during it. Assign named roles, rehearse annually, and make sure everyone knows who picks up the phone when systems go down.
 
-**Build and rehearse an incident response plan:**
-A plan only works if people know it exists and have practiced it. This needs to happen before an attack, not after.
-
-**Invest in cybersecurity infrastructure:**
-The £92 million cost to recover from WannaCry far exceeded whatever basic security investment would have cost the NHS. For an organization holding the medical records of 65 million people, cybersecurity is not optional.
+**A.18.1 — Regulatory Compliance**
+Map legal obligations to technical controls and assign owners to each one. GDPR's 72-hour clock starts the moment you know about a breach. That is not enough time to figure out the rules from scratch.
 
 ---
 
 ## Lessons Learned
 
-- A patch is only useful if it's applied. EternalBlue had a fix which sat unused across hundreds of NHS systems for nearly two months. Vulnerability management is not simply knowing a patch exists, it's about making sure it gets installed.
+**A patch is only useful if it's applied.**
+EternalBlue had a fix which sat unused across hundreds of NHS systems for nearly two months. Vulnerability management is not simply knowing a patch exists, it's about making sure it gets installed.
 
-- Warnings mean nothing without accountability. The NHS received alerts from NHS Digital and a warning from the Department of Health a full year before the attack. None of it translated into action. An organization that issues guidance without verifying compliance has not actually managed a risk.
+**Warnings mean nothing without accountability.**
+The NHS received alerts from NHS Digital and a warning from the Department of Health a full year before the attack. None of it translated into action. An organization that issues guidance without verifying compliance has not actually managed a risk.
 
-- Legacy systems are a liability, not an inconvenience. Windows XP was end of life in 2014 and was a known vulnerability in 2017. The decision to keep running unsupported software is a risk decision that the NHS made repeatedly.
+**Legacy systems are a liability, not an inconvenience.**
+Windows XP was end of life in 2014 and was a known vulnerability in 2017. The decision to keep running unsupported software is a risk decision that the NHS made repeatedly.
 
-- Underfunding and Underplanning is a Security Risk. The NHS's refusal to modernize its IT infrastructure was consistently linked to budget constraints. An incident response plan that has never been tested is not a plan. Cybersecurity investment is inherent to patient safety and should be treated as any other emergency. WannaCry has made that impossible to ignore.
+**Underfunding and Underplanning is a Security Risk.**
+The NHS's refusal to modernize its IT infrastructure was consistently linked to budget constraints. An incident response plan that has never been tested is not a plan. Cybersecurity investment is inherent to patient safety and should be treated as any other emergency. WannaCry has made that impossible to ignore.
 
 ---
 
@@ -141,3 +142,6 @@ The £92 million cost to recover from WannaCry far exceeded whatever basic secur
 - National Health Executive — WannaCry Cyber Attack Cost the NHS £92m
 - npj Digital Medicine — A Retrospective Impact Analysis of the WannaCry Cyberattack on the NHS
 - Acronis — The NHS Cyber Attack: How and Why it Happened
+
+---
+*Analysis based on publicly available post-incident reports including the National Audit Office investigation (October 2017) and the Department of Health and Social Care cost report. This is an independent educational assessment, not an official audit or legal determination.*
