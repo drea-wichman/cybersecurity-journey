@@ -30,7 +30,6 @@ An agreement between two or more countries that allows them to request and share
 Organizations operating internationally need to understand that legal obligations cross borders. Privacy tools protect content, but metadata and account information can still be captured legally. Compliance teams should consider how MLATs affect who can legally access data and where.
 
 **Sources:**
-- [404 Media - Proton Mail Helped FBI Unmask Anonymous 'Stop Cop City' Protester](https://www.404media.co/proton-mail-helped-fbi-unmask-anonymous-stop-cop-city-protestor/)
 - [TechCrunch - ProtonMail logged IP address of French activist after order by Swiss authorities](https://techcrunch.com/2021/09/06/protonmail-logged-ip-address-of-french-activist-after-order-by-swiss-authorities/)
 - [Proton - Important clarifications regarding arrest of climate activist](https://proton.me/blog/climate-activist-arrest)
 - [Proton - Transparency Report](https://proton.me/legal/transparency)
