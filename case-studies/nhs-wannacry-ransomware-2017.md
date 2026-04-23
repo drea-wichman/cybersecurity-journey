@@ -148,7 +148,8 @@ Windows XP was end of life in 2014 and was a known vulnerability in 2017. The de
 **Underfunding and Underplanning is a Security Risk.**
 The NHS's refusal to modernize its IT infrastructure was consistently linked to budget constraints. An incident response plan that has never been tested is not a plan. Cybersecurity investment is inherent to patient safety and should be treated as any other emergency. WannaCry has made that impossible to ignore.
 
-**Organizations holding personal data or providing critical services have a legal and ethical obligation to the people depending on them. The UK's Data Protection Act, GDPR, and NIS Regulations all rest on this principle that security is not a nice-to-have, it is the standard of care expected of any organization entrusted with sensitive information. WannaCry exposed a failure of that duty and future incidents should be measured against the same standard.**
+**Cybersecurity is a duty of care, not a discretionary expense.**
+Organizations holding personal data or providing critical services have a legal and ethical obligation to the people depending on them. The UK's Data Protection Act, GDPR, and NIS Regulations all rest on this principle that security is not a nice-to-have, it is the standard of care expected of any organization entrusted with sensitive information. WannaCry exposed a failure of that duty and future incidents should be measured against the same standard.
 
 ---
 
