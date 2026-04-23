@@ -145,7 +145,7 @@ The NHS received alerts from NHS Digital and a warning from the Department of He
 **Legacy systems are a liability, not an inconvenience.**
 Windows XP was end of life in 2014 and was a known vulnerability in 2017. The decision to keep running unsupported software is a risk decision that the NHS made repeatedly.
 
-**Underfunding and Underplanning is a Security Risk.**
+**Underfunding and underplanning is a security risk.**
 The NHS's refusal to modernize its IT infrastructure was consistently linked to budget constraints. An incident response plan that has never been tested is not a plan. Cybersecurity investment is inherent to patient safety and should be treated as any other emergency. WannaCry has made that impossible to ignore.
 
 **Cybersecurity is a duty of care, not a discretionary expense.**
