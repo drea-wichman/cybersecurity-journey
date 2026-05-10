@@ -25,7 +25,7 @@ Documenting everything here as I build toward a career in cyber security.
 
 - **[Case Studies](https://github.com/drea-wichman/cybersecurity-journey/tree/main/case-studies)** — real-world incident analysis (NHS WannaCry, AGCO ransomware)
 - **[Personal OpSec Setup](https://github.com/drea-wichman/cybersecurity-journey/blob/main/personal-opsec-setup.md)** — custom domain email, DKIM/SPF/DMARC, alias-based privacy
-- **[GRC Notes](https://github.com/drea-wichman/cybersecurity-journey/blob/main/grc-notes.md)** — ongoing notes on frameworks, risk, compliance
+- **[GRC Rabbit Hole Notes](https://github.com/drea-wichman/cybersecurity-journey/blob/main/grc-rabbit-hole-notes.md)** — ongoing notes on random GRC topics: surveillance law, computer crime, data protection, governance failures
 
 ## What's Next
 
