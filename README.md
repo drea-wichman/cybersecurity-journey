@@ -10,7 +10,7 @@ Documentation of my career change into cyber security: case studies, GRC notes, 
   
 
 ## Featured Project
-[**Fellow Agritech Ltd.**](https://github.com/drea-wichman/fellow) - a fictional UK B2B agritech SaaS company built as an independent GRC portfolio project.  
+[**Fenn Agritech Ltd.**](https://github.com/drea-wichman/fenn) - a fictional UK B2B agritech SaaS company built as an independent GRC portfolio project.  
 Includes risk register, policies, incident response plan, vendor risk assessment, and supporting documentation.
 
 
