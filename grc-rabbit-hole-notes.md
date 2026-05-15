@@ -110,7 +110,7 @@ Federal prosecutors stacked ten counts against Hutchins under the same logic tha
 - **NHS leadership:** Ignored a year of NHS Digital patch warnings. The National Audit Office confirmed the attack was preventable. Sir Chris Wormald, the Permanent Secretary at the Department of Health and Social Care, told the Public Accounts Committee in 2018 that "Cyber attacks and cyber crime are a fact of life. You are never completely safe from them, and indeed, if you believed you were completely safe from cyber crime, it would be an extremely bad sign." Nobody at NHS Digital, NHS England, or the Department of Health was fired, charged, fined, or formally disciplined. Instead(!) Sir Chris Wormald was promoted. Despite UK taxpayers paying an additional £196 million for cybersecurity through 2020 after WannaCry, a 2018 parliamentary audit found that all 200 NHS organizations checked still failed cybersecurity checks. The NHS continues to fail its legal obligation to protect patient data and has been breached every year since:
 
     - **2022:** LockBit took down NHS 111 emergency triage and stole 80,000 people's data
-    - **2023:** Ransomware on Barts Health stole 70 terabytes of patient data
+    - **2023:** Ransomware on Barts Health stole 7 terabytes of patient data
     - **2024:** NHS Scotland breached by Inc Ransom
     - **2024:** Alder Hey Children's Hospital and Wirral University Teaching Hospital both hit
     - **2024:** A ransomware attack on NHS contractor Synnovis disrupted more than 10,000 appointments at King's College Hospital and contributed to a patient's death
