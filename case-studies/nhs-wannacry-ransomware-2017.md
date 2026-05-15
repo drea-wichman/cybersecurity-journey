@@ -43,7 +43,7 @@ The NHS was not the intended target, it was the most exposed large institution i
 **Group:** Lazarus Group  
 **Type:** State-sponsored  
 **Origin:** North Korea  
-**Method:** Ransomware worm — EternalBlue exploit used to automatically spread WannaCry across unpatched Windows systems, encrypting files and demanding Bitcoin ransom  
+**Method:** Ransomware worm. EternalBlue exploit used to automatically spread WannaCry across unpatched Windows systems, encrypting files and demanding Bitcoin ransom  
 **Attribution:** Formally attributed to North Korea by the US and UK governments in December 2017. North Korea has denied involvement.  
 **Notable:** Most ransomware groups are criminal organizations motivated purely by money. Lazarus Group works for the North Korean government. The following traits of WannaCry suggest it was either unfinished or potentially released prematurely: the ransom demand was somewhat low at $300–$600 per machine, the payment infrastructure used only three hardcoded Bitcoin wallets with no way to keep track of who made payments, and the total ransom collected was approximately $140,000 against estimated total damages of $4 billion. These traits raise questions about whether financial gain was the primary motivation or if the malware escaped before it was ready.
 
